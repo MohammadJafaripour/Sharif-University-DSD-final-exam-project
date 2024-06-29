@@ -48,7 +48,7 @@ It also provide a simulation space for our project
 This project contains three calculation parts:
 
 1. **Space calculation by hour**: System modify space in specific hours.
-       ```verilog
+   ```verilog
              if (t < 16 && t >= 13) begin
                 uni_vacated_space = uni_vacated_space - 50;
                 vacated_space = vacated_space + 50;
@@ -59,7 +59,7 @@ This project contains three calculation parts:
                 vacated_space = vacated_space + 150;
                 max_vacated_space = 500;
             end
-       ```
+   ```
 2. **Enterans of cars**: By Entrans a car change reserved space.
         ```verilog
            if (car_exited && !is_uni_car_exited && parked_car > 0) begin
@@ -75,7 +75,7 @@ This project contains three calculation parts:
                     uni_parked_car = uni_parked_car + 1;
                     uni_vacated_space = uni_vacated_space - 1;
             end
-       ```
+       
 3. **Availabilty enterance**: give entrace if there is vaced space.
        ```verilog
             if (uni_parked_car < 500 && uni_parked_car + parked_car < 700)
@@ -86,7 +86,7 @@ This project contains three calculation parts:
                 is_vacated_space = 1;
             else 
                 is_vacated_space = 0;
-       ```
+      
 
 
 ## Author
