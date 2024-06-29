@@ -88,4 +88,4 @@ This project contains three calculation parts:
                 is_vacated_space = 0;
    ```
 ## Author
-- [Mohammad Jafaripour](401105797)
+- [Mohammad Jafaripour] 401105797
